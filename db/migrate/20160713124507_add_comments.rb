@@ -3,6 +3,7 @@ class AddComments < ActiveRecord::Migration
   	create_table :comments do |t|
   		t.belongs_to :post, index: true
   		t.text :content
+  		t.text :username
   		t.timestamps
   	end
   end
